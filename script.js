@@ -23,7 +23,7 @@ homeTimeLine
     ease: 'ease',
     scrollTrigger:{
       trigger: '.video-section',
-      scrub: 1,
+      scrub: 2,
       start: 'top',
       end: 'bottom',
       pin: true,
@@ -35,10 +35,11 @@ homeTimeLine
     stagger: {
       amount: .4,
     },
-    delay: 1
+    delay: 0.5
 })
 .from('.right-side', {
   opacity: 0,
+  delay: 0.5,
   stagger: {
     amount: .4,
   },
