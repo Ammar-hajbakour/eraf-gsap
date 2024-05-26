@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
+.navbar span {
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+    transform: translate(-100%);
+  }
+
+  100% {
+    left: 100%;
+    transform: translate(0%);
+  }
+}
+
+.logo {
+  font-size: 30px;
+  cursor: pointer;
+  font-family: w;
+}
+.navbar ul li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
